@@ -30,14 +30,16 @@ namespace ListaDeTarefas.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("Data")
+                    b.Property<DateTime>("DataTarefa")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Descricao")
+                    b.Property<string>("HoraTarefa")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool?>("Finalizada")
-                        .HasColumnType("bit");
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

@@ -1,12 +1,23 @@
-﻿namespace ListaDeTarefas.Models
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ListaDeTarefas.Models;
+
+public class Tarefa
 {
-    public class Tarefa
-    {
-        public int Id { get; set; }
-        public string? Descricao { get; set; }
-        public DateTime Data { get; set; }
-        public bool? Finalizada { get; set; }
+    [Key]
+    public int Id { get; set; }
+
+    [Required(ErrorMessage = "O campo Nome é obrigatório")]
+    public string Nome { get; set; }
+
+    
+    [DataType(DataType.Date)]
+    [Required(ErrorMessage = "O campo Data é obrigatório")]
+    public DateTime DataTarefa { get; set; }
+
+    public string HoraTarefa { get; set; }
 
 
-    }
 }
