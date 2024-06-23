@@ -14,7 +14,7 @@ public class Tarefa
 
     
     [DataType(DataType.Date)]
-    [Required(ErrorMessage = "O campo Data é obrigatório")]
+    [Required(ErrorMessage = "O campo DataTarefa é obrigatório")]
     public DateTime DataTarefa { get; set; }
 
     public string HoraTarefa { get; set; }

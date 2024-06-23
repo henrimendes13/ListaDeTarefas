@@ -35,6 +35,11 @@ namespace ListaDeTarefas.Controllers
                 tarefa.HoraTarefa
             });
 
+            if (_context.Tarefas == null)
+            {
+                return NotFound();
+            }
+
             return Ok(result);
         }
 
@@ -43,6 +48,11 @@ namespace ListaDeTarefas.Controllers
         public async Task<ActionResult<Tarefa>> GetTarefa(int id)
         {
             var tarefa = await _context.Tarefas.FindAsync(id);
+
+            if (_context.Tarefas == null)
+            {
+                return NotFound();
+            }
 
             if (tarefa == null)
             {
@@ -64,11 +74,16 @@ namespace ListaDeTarefas.Controllers
         [HttpPost]
         public async Task<ActionResult<Tarefa>> PostTarefa(Tarefa tarefa)
         {
+            if (_context.Tarefas == null)
+            {
+                return Problem("Erro ao criar o produto, tabela de Tarefas inexistente no banco de dados. Contate o suporte");
+            }
+
             if (!ModelState.IsValid)
             {
                 return ValidationProblem(new ValidationProblemDetails(ModelState)
                 {
-
+                    Title = "Dados incompletos",
                 });
             }
 
@@ -87,12 +102,20 @@ namespace ListaDeTarefas.Controllers
         }
 
 
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         public async Task<IActionResult> PutTarefa(int id, Tarefa tarefa)
         {
             if (id != tarefa.Id)
             {
                 return BadRequest();
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return ValidationProblem(new ValidationProblemDetails(ModelState)
+                {
+                    Title = "Dados incompletos",
+                });
             }
 
             _context.Entry(tarefa).State = EntityState.Modified;
@@ -117,10 +140,16 @@ namespace ListaDeTarefas.Controllers
         }
 
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteTarefa(int id)
         {
+            if (_context.Tarefas == null)
+            {
+                return Problem("Erro ao criar o produto, tabela de Tarefas inexistente no banco de dados. Contate o suporte");
+            }
+
             var tarefa = await _context.Tarefas.FindAsync(id);
+
             if (tarefa == null)
             {
                 return NotFound();
