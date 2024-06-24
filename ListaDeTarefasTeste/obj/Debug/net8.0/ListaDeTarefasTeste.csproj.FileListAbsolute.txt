@@ -6,7 +6,6 @@ C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\bin\Debug\net8
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\bin\Debug\net8.0\appsettings.json
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\bin\Debug\net8.0\ListaDeTarefas.exe
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\bin\Debug\net8.0\testhost.exe
-C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\bin\Debug\net8.0\ListaDeTarefasTeste.deps.json
@@ -331,3 +330,4 @@ C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\obj\Debug\net8
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\obj\Debug\net8.0\ListaDeTarefasTeste.pdb
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\obj\Debug\net8.0\ListaDeTarefasTeste.genruntimeconfig.cache
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\obj\Debug\net8.0\ref\ListaDeTarefasTeste.dll
+C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefasTeste\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll

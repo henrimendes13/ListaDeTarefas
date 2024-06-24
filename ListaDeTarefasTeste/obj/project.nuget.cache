@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h3cOspnB1FM=",
+  "dgSpecHash": "HGqfUcgeVro=",
   "success": true,
   "projectFilePath": "C:\\Users\\Henrique\\source\\repos\\ListaDeTarefas\\ListaDeTarefasTeste\\ListaDeTarefasTeste.csproj",
   "expectedPackageFiles": [
@@ -183,7 +183,7 @@
     "C:\\Users\\Henrique\\.nuget\\packages\\xunit.core\\2.8.1\\xunit.core.2.8.1.nupkg.sha512",
     "C:\\Users\\Henrique\\.nuget\\packages\\xunit.extensibility.core\\2.8.1\\xunit.extensibility.core.2.8.1.nupkg.sha512",
     "C:\\Users\\Henrique\\.nuget\\packages\\xunit.extensibility.execution\\2.8.1\\xunit.extensibility.execution.2.8.1.nupkg.sha512",
-    "C:\\Users\\Henrique\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.3\\xunit.runner.visualstudio.2.5.3.nupkg.sha512"
+    "C:\\Users\\Henrique\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.1\\xunit.runner.visualstudio.2.8.1.nupkg.sha512"
   ],
   "logs": []
 }
