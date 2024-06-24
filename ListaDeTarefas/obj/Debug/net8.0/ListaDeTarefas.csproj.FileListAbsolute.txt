@@ -251,3 +251,11 @@ C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\bin\Debug\net8.0\ru
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\obj\Debug\net8.0\ListaDeTarefas.sourcelink.json
+C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\bin\Debug\net8.0\Microsoft.AspNetCore.TestHost.dll
+C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\bin\Debug\net8.0\Moq.dll
+C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\bin\Debug\net8.0\xunit.abstractions.dll
+C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\bin\Debug\net8.0\xunit.assert.dll
+C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\bin\Debug\net8.0\xunit.core.dll
+C:\Users\Henrique\source\repos\ListaDeTarefas\ListaDeTarefas\bin\Debug\net8.0\xunit.execution.dotnet.dll

@@ -23,9 +23,12 @@ namespace ListaDeTarefas.Controllers
 
 
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<ActionResult<IEnumerable<Tarefa>>> GetTarefas()
         {
-            var tarefas = await _context.Tarefas.ToListAsync();
+            var tarefas = await _context.Tarefas.Take(20).ToListAsync();
 
             var result = tarefas.Select(tarefa => new
             {
@@ -44,7 +47,10 @@ namespace ListaDeTarefas.Controllers
         }
 
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<ActionResult<Tarefa>> GetTarefa(int id)
         {
             var tarefa = await _context.Tarefas.FindAsync(id);
@@ -72,6 +78,9 @@ namespace ListaDeTarefas.Controllers
 
 
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesDefaultResponseType]
         public async Task<ActionResult<Tarefa>> PostTarefa(Tarefa tarefa)
         {
             if (_context.Tarefas == null)
@@ -103,6 +112,10 @@ namespace ListaDeTarefas.Controllers
 
 
         [HttpPut("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<IActionResult> PutTarefa(int id, Tarefa tarefa)
         {
             if (id != tarefa.Id)
@@ -141,6 +154,9 @@ namespace ListaDeTarefas.Controllers
 
 
         [HttpDelete("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public async Task<IActionResult> DeleteTarefa(int id)
         {
             if (_context.Tarefas == null)
